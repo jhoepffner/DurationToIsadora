@@ -1,0 +1,44 @@
+This project is conducted by Jacques Hoepffner
+jacques.hoepffner@wanadoo.fr
+
+IsadoraToDuration project
+
+--------------------------------------
+
+Duration semble être l'application qui comble un manque dans Isadora, une timeline qui permette facilement de synchroniser différents événements et de les faire varier au cours du temps.
+Quelques problèmes empêchent une parfaite et facile collaboration:
+
+1) Duration a besoin de message OSC sous la forme /duration/play sans argument et sans espaces, Isadora ne peut envoyer un message OSC que s'il y a un argument, lui-même séparé de l'adresse par un espace.
+En attendant que ce problème soit corrigé, j'ai trouvé 2 moyens de contourner le problème:
+– passer par une application créée dans Max/Msp qui fasse une adresse à partir d'une adresse et d'un argument (IsadoraToDuration.app)
+– envoyer l'adresse avec un argument quelconque à OSCulator qui la renvoie à Duration sans argument (DurationPlayStopSave.iua et IsadoraToDuration.oscd).
+
+2) Duration envoie des informations couleurs en RGB (Red, Green, Blue), Isadora utilise HSL (Hue, Saturation, Luminance), j'ai fait un petit patch Quark Composer pour pouvoir utiliser dans Isadora les informations couleur de Duration (rgbTest02.qtz, à placer dans le dossier /Library/Compositions).
+
+On peut aussi asservir Duration à un movie dans Isadora via le Timecode, en utilisant mon userActor timecodeToDuration.iua qui envoie le Timecode à Duration.
+– fps est la cadence du film (si on veut avoir l'affichage du timecode SMPTE)
+– position est la position du film telle qu'indiquée par le moviePlayer dans Isadora
+– item index est le N°du clip dans Isadora
+– udp adresse est l'IP de l'ordinateur cible (localhost ou 127.0.0.1 sur le même ordinateur)
+– port est le numéro de port OSC entrant de Duration
+– SMPTE est une sortie pour affichage
+
+------------------------------------------
+
+Duration seems to be the app filling a gap in Isadora, a timeline allowing to synchronize easily diverse events and to varies parameters with time.
+Some problems avoid a perfect collaboration:
+
+1) Duration needs OSC messages on the form /duration/play without argument and without space, Isadora can send an OSC message only with argument, separated from the address with a space.
+Waiting for a correction, I found two ways:
+– pass by a Max/Msp standalone who make an address from address and argument (IsadoraToDuration.app)
+– send the address with an arbitrary argument to an Osculator patch who resend it to Duration without argument (DurationPlayStopSave.iua et IsadoraToDuration.oscd).
+
+2) Duration send color informations in RGB, Isadora use HSL, I made a little patch in Quartz Composer, as to use in Isadora the color informations from Duration (rgbTest02.qtz, to place in the /Library/Compositions folder).
+
+The great possibility is to enslave Duration to a movie in Isadora, via Timecode, using my Isadora userActor timecodeToDuration.iua, who send the timecode to Duration.
+– fps is the movie cadence (if you want to show the SMPTE timecode)
+– position is the movie position from the moviePlayer in Isadora
+– item index number of the clip in Isadora
+– udp adresse target computer IP (localhost or 127.0.0.1 on the same computer)
+– port port number for incoming OSC in Duration
+– SMPTE output for display

@@ -1,0 +1,42 @@
+<keyframes>
+    <key>
+        <flag>depart</flag>
+        <time>00:00:54:663</time>
+        <value>0.500000000</value>
+    </key>
+    <key>
+        <flag>sous-titre 1</flag>
+        <time>00:01:35:538</time>
+        <value>0.125000000</value>
+    </key>
+    <key>
+        <flag />
+        <time>00:01:36:712</time>
+        <value>1.000000000</value>
+    </key>
+    <key>
+        <flag>sous-titre 2</flag>
+        <time>00:02:40:615</time>
+        <value>0.250000000</value>
+    </key>
+    <key>
+        <flag>sous-titre 3</flag>
+        <time>00:05:21:230</time>
+        <value>0.000000000</value>
+    </key>
+    <key>
+        <flag>sous-titre 3,2</flag>
+        <time>00:06:22:646</time>
+        <value>1.000000000</value>
+    </key>
+    <key>
+        <flag>sous-titre 3,5</flag>
+        <time>00:07:24:058</time>
+        <value>0.975000024</value>
+    </key>
+    <key>
+        <flag>sous-titre 4</flag>
+        <time>00:09:27:894</time>
+        <value>1.000000000</value>
+    </key>
+</keyframes>

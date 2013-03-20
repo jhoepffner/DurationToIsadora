@@ -1,0 +1,17 @@
+<keyframes>
+    <key>
+        <flag>premier</flag>
+        <time>00:02:38:914</time>
+        <value>0.600000024</value>
+    </key>
+    <key>
+        <flag>deuxime</flag>
+        <time>00:04:00:175</time>
+        <value>1.000000000</value>
+    </key>
+    <key>
+        <flag>troisieme</flag>
+        <time>00:04:38:724</time>
+        <value>1.000000000</value>
+    </key>
+</keyframes>

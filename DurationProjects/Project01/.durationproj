@@ -1,0 +1,60 @@
+<tracks>
+    <page>
+        <name>Page One</name>
+        <track>
+            <type>Colors</type>
+            <xmlFileName>colors_.xml</xmlFileName>
+            <trackName>colors</trackName>
+            <displayName>colors</displayName>
+            <sendOSC>1</sendOSC>
+            <receiveOSC>0</receiveOSC>
+            <palette>GUI/defaultColorPalette.png</palette>
+        </track>
+        <track>
+            <type>Flags</type>
+            <xmlFileName>flags_.xml</xmlFileName>
+            <trackName>flags</trackName>
+            <displayName>flags</displayName>
+            <sendOSC>1</sendOSC>
+            <receiveOSC>0</receiveOSC>
+        </track>
+        <track>
+            <type>Curves</type>
+            <xmlFileName>curves_.xml</xmlFileName>
+            <trackName>curves</trackName>
+            <displayName>movie01/intensity</displayName>
+            <sendOSC>1</sendOSC>
+            <receiveOSC>1</receiveOSC>
+            <min>0.000000000</min>
+            <max>100.000000000</max>
+        </track>
+        <track>
+            <type>Audio</type>
+            <xmlFileName></xmlFileName>
+            <trackName>audio</trackName>
+            <displayName>audio</displayName>
+            <sendOSC>1</sendOSC>
+            <receiveOSC>0</receiveOSC>
+            <clip>/Users/hoepffner/Desktop/01 Ideal World.aif</clip>
+        </track>
+    </page>
+</tracks>
+<timelineSettings>
+    <duration>00:05:39:173</duration>
+    <playhead>00:04:08:189</playhead>
+    <inpoint>00:00:00:000</inpoint>
+    <outpoint>00:05:39:173</outpoint>
+    <loop>1</loop>
+</timelineSettings>
+<projectSettings>
+    <useBPM>0</useBPM>
+    <bpm>60.499988556</bpm>
+    <snapToBPM>0</snapToBPM>
+    <snapToKeys>0</snapToKeys>
+    <oscInEnabled>1</oscInEnabled>
+    <oscOutEnabled>1</oscOutEnabled>
+    <oscInPort>1236</oscInPort>
+    <oscIP>localhost</oscIP>
+    <oscOutPort>1234</oscOutPort>
+    <oscRate>30.000000000</oscRate>
+</projectSettings>

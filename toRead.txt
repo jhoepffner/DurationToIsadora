@@ -8,7 +8,8 @@ IsadoraToDuration project
 Duration semble être l'application qui comble un manque dans Isadora, une timeline qui permette facilement de synchroniser différents événements et de les faire varier au cours du temps.
 Quelques problèmes empêchent une parfaite et facile collaboration:
 
-1) Duration a besoin de message OSC sous la forme /duration/play sans argument et sans espaces, Isadora ne peut envoyer un message OSC que s'il y a un argument, lui-même séparé de l'adresse par un espace.
+1) Duration a besoin de message OSC sous la forme /duration/play sans argument et sans espaces,
+Isadora ne peut envoyer un message OSC que s'il y a un argument, lui-même séparé de l'adresse par un espace.
 En attendant que ce problème soit corrigé, j'ai trouvé 2 moyens de contourner le problème:
 – passer par une application créée dans Max/Msp qui fasse une adresse à partir d'une adresse et d'un argument (IsadoraToDuration.app)
 – envoyer l'adresse avec un argument quelconque à OSCulator qui la renvoie à Duration sans argument (DurationPlayStopSave.iua et IsadoraToDuration.oscd).
